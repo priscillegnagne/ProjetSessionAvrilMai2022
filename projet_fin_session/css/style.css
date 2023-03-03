@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&display=swap');
+
+html{font:400 100%/1.5 Montserrat,Helvetica,Arial,sans-serif;}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+   
+}
+h1, h2{
+    text-transform: uppercase;
+}
+h2{font-weight: 600;}
+strong{font-weight: 600;}
+
+video{
+    max-width: 100%;
+    height: auto;
+}
+iframe{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+img{max-width: 100%;
+height: auto;
+}
+
+/* style pour les plats */
+ ul{
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+ ul li a{
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    background: rgba(0,0,0,.75);
+    display: block;
+    padding: 1rem 2rem;
+    border-bottom: 0.063rem solid rgba(255,255,255,.1);
+    transition: all .3s ease;
+}
+ ul li a:hover{
+    background: rgba(0,0,0,.95);
+}
+
+@media screen and (min-width:768px){
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+ul>li{
+    flex:1;
+}
+ul>li>a{
+    padding: 0 2%;
+    font-size: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ ul li ul{
+    display: none;
+}    
+}
+
+/* style de contenu */
+#meta-contenu{
+    padding: 5%;
+}
+
+@media screen and (min-width:992px) {
+    #meta-contenu{
+        display: flex;
+    }
+    #contenu{
+        flex: 2;
+        margin-right: 5%;
+    }
+    aside{
+        flex: 1;
+    }
+}
+.liste-plats{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+.liste-plats li{
+    position: relative;
+    margin-bottom: 1rem;
+    display: table;
+    /*width: fit-content;*/
+    overflow: hidden;
+}
+.liste-plats li img{
+    display: block;
+}
+
+.texte-plat{
+    background: rgba(0,0,0,.75);
+    color: #fff;
+    padding: 1rem;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    opacity: 0;
+    transition: all .7s ease;
+}
+.liste-plats li:hover .texte-plat{
+    opacity: 1;
+}
+.texte-plat a{
+    border: 0.063rem solid #fff;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+}
+
+@media screen and (min-width:768px){
+  .liste-plats{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -1rem;
+  } 
+  .liste-plats li{
+      flex: 0 0 calc(50% - 2rem);
+      margin: 1rem;
+  } 
+}
+.barre-nav-element {
+    background-color: #4cafa0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

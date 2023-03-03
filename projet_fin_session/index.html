@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrique Gourmet</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>   
+        <video controls muted autoplay loop class="video-container">
+            <source src="./contenu/PexelsVideos4644.mp4" type="video/mp4" />
+        </video>   
+        <h1>Afrique Gourmet</h1>
+    </header>
+    <main>
+        <section>
+            <div class="barre-nav">
+                <button class="barre-nav-element button1" onclick="ouvreContenu('plats')">Plats</button>
+                <button class="barre-nav-element button2" onclick="ouvreContenu('restaurants')">Restaurants</button>
+            <div id="plats" class="display-container contenu">
+                <ul class="liste-plats">
+                    <li>
+                        <img src="./contenu/images/pexels-omar-mahmood-106343.jpg" alt="Plat de poulet">
+                        <div class="texte-plat">
+                            <p>Le poulet braisé est un plat très appréciés et cuisiné dans les pays d'Afrique. </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./contenu/images/pexels-ivan-torres-1374651.jpg" alt="Piments">
+                        <div class="texte-plat">
+                            <p>Le piment est un condiment qui ne saurait manqué dans la cuisine africaine.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./contenu/images/Foufou_banane_03.JPG" alt="Foufou">
+                        <div class="texte-plat">
+                            <p>Fait à base de banane plantain ou d'igname, le foufou est un plat consistant qui se consomme grandement dans les pays d'Afrique de l'Ouest. Il est accompagné d'une sauce au poisson ou à la viande.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./contenu/images/Cuisine_de_Côte_d'Ivoire_-_Du_placali.JPG" alt="Placali">
+                        <div class="texte-plat">
+                            <p>Le placali est fait avec une pâte de de manioc cuite. Se mange avec une sauce à base de gombos à la viande ou au poisson.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./contenu/images/Plat_attiéké.jpg" alt="Attiéké">
+                        <div class="texte-plat">
+                            <p>L'attiéké, plat très consommé en Côte d'Ivoire, est fait à partir de manioc. C'est du "coucous" de manioc cuit à la vapeur.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./contenu/images/Plat_de_poisson_la_braise.JPG" alt="poisson braisé">
+                        <div class="texte-plat">
+                            <p>De même que le poulet, le poisson braisé est hautement apprécié dans les pays cotiers africains. Il est mangé agrémenté de tomates, oignons et piments</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id ="restaurants" class="display-container contenu" style="display:none">
+                <p>Vous trouverez ici une carte des restaurants servant des plats africains. Zoomez pour en trouver un près de chez vous.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1701938.8236916142!2d-75.05794211713376!3d45.92903011184883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants%20africains!5e0!3m2!1sfr!2sca!4v1652497687822!5m2!1sfr!2sca" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p><strong class="typo-spumoni">Afrique Gourmet</strong>
+        <p>&#169; Tous droits réservés 2022, Afrique Gourmet.</p>
+    </footer>
+<script src="./js/script.js"></script>
+    
+</body>
+</html>
+
+<!-- Video et images libre d'utilisation prise sur
+https://www.pexels.com/fr-fr/video/poulets-a-la-recherche-de-nourriture-856986/ 
+https://www.pexels.com/fr-fr/photo/poulet-gril-sur-plateau-blanc-pres-de-la-nourriture-vegetale-de-feuille-verte-106343/
+https://www.pexels.com/fr-fr/photo/tas-de-piments-1374651/-->
+
+<!-- Images creatives commons
+https://commons.wikimedia.org/wiki/File:Foufou_banane_03.JPG 
+https://commons.wikimedia.org/wiki/File:Cuisine_de_C%C3%B4te_d%27Ivoire_-_Du_placali.JPG
+https://commons.wikimedia.org/wiki/File:Plat_atti%C3%A9k%C3%A9.jpg
+https://commons.wikimedia.org/wiki/File:Plat_de_poisson_la_braise.JPG-->
